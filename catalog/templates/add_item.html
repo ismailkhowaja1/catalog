@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+
+{% block add %}
+
+<form action="" method="POST">
+	<input type="text" name="name" placeholder="Item name"><br>
+	<textarea name="description" id="" cols="30" rows="10"></textarea><br>
+	<select name="category" id=""><br>
+		{% for c in categories %}
+		<option value="{{c.name}}">{{c.name}}</option>
+		{% endfor %}
+	</select>
+	<br>
+	<button class="btn btn-success" type="submit">Add new Item</button>
+</form>
+{% endblock %}

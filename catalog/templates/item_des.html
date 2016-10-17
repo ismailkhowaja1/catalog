@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+
+
+{% block item %}
+<h1>{{item.name}}</h1>
+
+<p>{{item.description}}</p>
+
+<a class="btn btn-info" href="{{url_for('editItem', item_id=item.item_id)}}">Edit</a>
+<a class="btn btn-danger" href="{{url_for('deleteItem', item_id=item.item_id)}}">Delete</a>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+
+{% block delete %}
+
+<h2>{{item.name}}</h2>
+<p>{{item.description}}</p>
+<form action="" method='POST'>
+	<button class="btn btn-danger" type="submit">Delete</button>
+</form>
+
+{% endblock %}

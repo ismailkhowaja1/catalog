@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+
+{% block edit %}
+<form action="" class="text-center" method="POST">
+	<div class="form-group">
+	<input type="text" name="name" placeholder="new name">
+	<br>
+	<textarea name="description" placeholder="new Description" cols="30" rows="10"></textarea>
+	<br>
+	<button class="btn btn-success" type="submit">Edit</button>
+	</div>
+</form>
+{% endblock %}
