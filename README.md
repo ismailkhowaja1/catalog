@@ -1,5 +1,6 @@
 # catalog
 you have to download vm virtual machine, git bash, python
+you also have to put fb_clients_secrets.json in main project folder
 
 install all above
 
